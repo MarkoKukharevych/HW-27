@@ -1,0 +1,42 @@
+.thumb {
+    position: relative;
+    width: 150px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.438);
+    overflow: hidden;
+    color: white;
+    transform: translateX(-80px);
+}
+
+.thumb:hover {
+    overflow: visible;
+    width: 400px;
+    height: 500px;
+    transition: transform 400ms ease-in;
+}
+
+.thumb__list {
+    gap: 15px;
+}
+
+.thumb__item {}
+
+.thumb__item-link {}
+
+.thumb__item-link:hover {
+    color: rgb(255, 145, 0);
+}
+
+.text {
+    position: absolute;
+    flex-direction: column;
+    width: 150px;
+    writing-mode: vertical-rl;
+    margin-top: 70px;
+}
+
+.text:hover {
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
