@@ -1,42 +1,46 @@
-.thumb {
+.slide__menu {
     position: relative;
-    width: 150px;
+}
+
+.thumb {
+    position: absolute;
+    display: flex;
+    background-color: gray;
+    width: 20vw;
     height: 500px;
-    background-color: rgba(0, 0, 0, 0.438);
-    overflow: hidden;
-    color: white;
-    transform: translateX(-80px);
+    color: #FFF;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(-95%);
+    transition: all 400ms ease-in-out;
 }
 
 .thumb:hover {
-    overflow: visible;
-    width: 400px;
-    height: 500px;
-    transition: transform 400ms ease-in;
+    transform: translateX(0);
+
+}
+
+.thumb:hover .thumb__text {
+    display: none;
 }
 
 .thumb__list {
-    gap: 15px;
+    list-style-type: '\25CA';
+    gap: 5px;
+    margin-left: 60px;
+    margin-top: -200px;
 }
 
-.thumb__item {}
-
-.thumb__item-link {}
-
-.thumb__item-link:hover {
-    color: rgb(255, 145, 0);
+.thumb__item {
+    font-size: 25px;
+    padding-left: 10px;
 }
 
-.text {
-    position: absolute;
-    flex-direction: column;
-    width: 150px;
+.thumb__item:hover {
+    color: rgb(104, 255, 3);
+
+}
+
+.thumb__text {
     writing-mode: vertical-rl;
-    margin-top: 70px;
-}
-
-.text:hover {
-    position: absolute;
-    right: 0;
-    overflow: hidden;
 }
